@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - CustomWeb</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cumweb.css">
+    <style>
+        .payment-summary {
+            background-color: var(--color-light);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        #payment-form input {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 2px solid var(--color-secondary);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        #payment-form input:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+        #submit-payment {
+            background-color: var(--color-accent);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+        #submit-payment:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <i class="fas fa-cubes"></i> CustomWeb
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Détails de Paiement</h2>
+
+            <div class="payment-summary">
+                <!-- Product details will be inserted by JavaScript -->
+            </div>
+
+            <!-- Formulaire de paiement -->
+            <form id="payment-form">
+                <div class="form-group">
+                    <input type="text" id="full-name" placeholder="Votre nom complet" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Votre adresse email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="credit-card" placeholder="Numéro de carte" maxlength="16" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="expiry-date" placeholder="MM/AA" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="cvv" placeholder="CVV" maxlength="3" required>
+                </div>
+                <button type="submit" id="submit-payment" class="payment-button">Payer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CustomWeb</h4>
+                    <p>Solutions digitales innovantes pour votre entreprise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>customweb00@gmail.com</li>
+                        <li>+(212)620-741397</li>
+                        <li>Martil, Morocco</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 CustomWeb. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

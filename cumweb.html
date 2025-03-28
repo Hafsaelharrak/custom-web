@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomWeb - Solutions Digitales Professionnelles</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cumweb.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <i class="fas fa-cubes"></i> CustomWeb
+                </div>
+                <ul class="nav-menu">
+                    <div class="nav-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Tarifs</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </div>
+                    <a href="#contact" class="nav-cta">Commencer</a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transformez Votre Vision Digitale en Réalité</h1>
+                <p class="hero-subtitle">Nous concevons des solutions numériques sur mesure qui propulsent votre entreprise vers de nouveaux sommets.</p>
+                <a href="#contact" class="hero-cta">
+                    Nos Services 
+                    <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="service-title">Site Web Responsive</h3>
+                    <p class="service-description">Design moderne et adaptatif pour une expérience utilisateur optimale</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">E-commerce</h3>
+                    <p class="service-description">Boutiques en ligne personnalisées et sécurisées</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Design Graphique</h3>
+                    <p class="service-description">Identité visuelle unique et mémorable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing">
+        <div class="container ">
+            <h2 class="section-title">Nos Tarifs</h2>
+            <div class="pricing-card">
+                <h3 class="pricing-title">Site Web Basique</h3>
+                <div class="pricing-price">5000DH</div>
+                <ul class="pricing-features">
+                    <li>Design Responsive</li>
+                    <li>5 Pages</li>
+                    <li>Optimisation SEO de Base</li>
+                    <li>Support 30 Jours</li>
+                </ul>
+                <a href="#contact" class="pricing-button modal-button">Commencer</a>
+                <a href="payment.html" class="pricing-button">Acheter</a>
+            </div>
+            <div class="pricing-card">
+                <h3 class="pricing-title">Solution E-commerce</h3>
+                <div class="pricing-price">8000DH</div>
+                <ul class="pricing-features">
+                    <li>Boutique en Ligne Complète</li>
+                    <li>Design Personnalisé</li>
+                    <li>Intégration Paiement</li>
+                    <li>Support Premium 90 Jours</li>
+                </ul>
+                <a href="#contact" class="pricing-button modal-button">Commencer</a>
+                <a href="payment.html" class="pricing-button">Acheter</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À Propos Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">À Propos de CustomWeb</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Chez CustomWeb, nous sommes passionnés par la transformation digitale. Fondée en 2015, notre entreprise se spécialise dans la création de solutions numériques innovantes qui répondent aux besoins uniques de chaque client.</p>
+                    <br>
+                    <p>Notre équipe d’experts en technologie combine créativité et expertise technique pour développer des solutions sur mesure qui propulsent les entreprises vers de nouveaux sommets. Nous croyons en la puissance de la technologie pour créer des expériences utilisateur exceptionnelles.</p>
+                </div>
+                <div class="about-image">
+                    <img src="team.jpg" alt="Notre Équipe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-Nous</h2>
+            <form class="contact-form">
+                <label for="name" class="sr-only">Nom Complet</label>
+                <input type="text" id="name" placeholder="Nom Complet" required>
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="message" class="sr-only">Votre Message</label>
+                <textarea id="message" placeholder="Votre Message" rows="5" required></textarea>
+                <button type="submit" class="contact-button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Project Start Modal -->
+    <div id="startProjectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>Commençons Votre Projet!</h2>
+            <p>Nous sommes ravis de vous aider à concrétiser votre vision numérique. Veuillez remplir ce formulaire et notre équipe vous contactera rapidement.</p>
+            <form id="projectStartForm">
+                <label for="company" class="sr-only">Nom de votre entreprise</label>
+                <input type="text" id="company" placeholder="Nom de votre entreprise" required>
+                <label for="name-modal" class="sr-only">Votre Nom</label>
+                <input type="text" id="name-modal" placeholder="Votre Nom" required>
+                <label for="email-modal" class="sr-only">Votre Email</label>
+                <input type="email" id="email-modal" placeholder="Votre Email" required>
+                <label for="project" class="sr-only">Décrivez brièvement votre projet</label>
+                <textarea id="project" placeholder="Décrivez brièvement votre projet" rows="4" required></textarea>
+                <button type="submit" class="contact-button">Soumettre</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Features Advanced Section -->
+    <section class="features-advanced container">
+        <h2 class="section-title">Comment Nous Travaillons</h2>
+        <div class="features-grid">
+            <div class="feature-card-advanced">
+                <div class="feature-icon-advanced">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="feature-title-advanced">Stratégie Personnalisée</h3>
+                <p class="feature-description-advanced">Nous commençons par comprendre votre vision unique et vos objectifs commerciaux spécifiques.</p>
+                <a href="#contact" class="feature-link-advanced">
+                    En Savoir Plus 
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="feature-card-advanced">
+                <div class="feature-icon-advanced">
+                    <i class="fas fa-drafting-compass"></i>
+                </div>
+                <h3 class="feature-title-advanced">Design Innovant</h3>
+                <p class="feature-description-advanced">Notre équipe créative transforme vos idées en expériences numériques élégantes et intuitives.</p>
+                <a href="#contact" class="feature-link-advanced">
+                    Voir Notre Approche 
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="feature-card-advanced">
+                <div class="feature-icon-advanced">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="feature-title-advanced">Développement Technique</h3>
+                <p class="feature-description-advanced">Nous utilisons les dernières technologies pour créer des solutions robustes et évolutives.</p>
+                <a href="#contact" class="feature-link-advanced">
+                    Nos Technologies 
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section class="process-section container">
+        <h2 class="section-title">Notre Processus</h2>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="process-number">01</div>
+                <h3 class="process-title">Découverte</h3>
+                <p class="process-description">Analyse approfondie de vos besoins et objectifs.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">02</div>
+                <h3 class="process-title">Conception</h3>
+                <p class="process-description">Création de maquettes et wireframes interactifs.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">03</div>
+                <h3 class="process-title">Développement</h3>
+                <p class="process-description">Transformation du design en solution fonctionnelle.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">04</div>
+                <h3 class="process-title">Lancement</h3>
+                <p class="process-description">Déploiement et support continu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CustomWeb</h4>
+                    <p>Solutions digitales innovantes pour votre entreprise.</p>
+                    
+                </div>
+                <div class="footer-section">
+                    <h4>Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Sites Web</a></li>
+                        <li><a href="#services">E-commerce</a></li>
+                        <li><a href="#services">Design Graphique</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Portfolio</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://ascolour.eu/" target="_blank">AS Colour</a></li>
+                        <li><a href="https://www.bbwheelsonline.com/" target="_blank">BB Wheels</a></li>
+                        <li><a href="https://burrow.com/" target="_blank">Burrow</a></li>
+                        <li><a href="https://www.livelarq.com/" target="_blank">LARQ</a></li>
+                        <li><a href="https://yeticycles.com/en-us" target="_blank">Yeti Cycles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>customweb00@gmail.com</li>
+                        <li>+(212)620-741397</li>
+                        <li>Martil,Morocco</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 CustomWeb. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js" ></script>
+</body>
+</html>
